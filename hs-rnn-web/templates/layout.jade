@@ -1,0 +1,22 @@
+html
+  head
+    title HS-RNN
+    link(rel='stylesheet', href='https://bootswatch.com/paper/bootstrap.min.css')
+    link(rel="stylesheet", href=url_for('static', filename='css/master.css'))
+  body
+    nav.navbar.navbar-primary
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='/') Hearthstone-RNN
+        ul.nav.navbar-nav
+          li.active
+            a(href='#') Home
+          li
+            a(href='#') Database
+          li
+            a(href='#') Best Cards
+          li
+            a(href='#') Worst Cards
+
+    .container
+      block content
